@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
-M, O, R, E = (0, 0), (6, 0), (8.25, -1.46), (-6.49, -3.42)
+M, O, R, E = (0, 0), (6, 0), (7.16, 4.35), (3.67, 6.36)
+
 
 def line_gen(C1, C2):
     return ((C1[0], C2[0]), (C1[1], C2[1]))
@@ -10,6 +11,7 @@ l1 = line_gen(M, O)
 l2 = line_gen(O, R)
 l3 = line_gen(R, E)
 l4 = line_gen(E, M)
+l5 = line_gen(R, M)
 
 
 def drawLine(line):
@@ -25,6 +27,7 @@ drawLine(l1)
 drawLine(l2)
 drawLine(l3)
 drawLine(l4)
+drawLine(l5)
 
 # plotting vertices
 drawVertix(M, "M")
